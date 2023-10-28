@@ -2,7 +2,7 @@
     --bs-card-cap-bg: #673ab7;
 }
 
-svg.bi {
+.bi {
     fill: currentColor;
     width: 1em;
     height: 1em;
