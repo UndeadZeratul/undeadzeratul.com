@@ -5,16 +5,16 @@ html {
 
 nav,
 .navbar {
-    --bs-navbar-color: var(--uz-color) !important;
-    --bs-navbar-active-color: var(--uz-color) !important;
-    --bs-navbar-brand-color: var(--uz-color) !important;
-    --bs-navbar-toggler-border-color: var(--uz-color) !important;
-    --bs-navbar-toggler-color: var(--uz-color) !important;
-    background-color: var(--uz-bg) !important;
+    --bs-navbar-color: var(--uz-color);
+    --bs-navbar-active-color: var(--uz-color);
+    --bs-navbar-brand-color: var(--uz-color);
+    --bs-navbar-toggler-border-color: var(--uz-color);
+    --bs-navbar-toggler-color: var(--uz-color);
+    background-color: var(--uz-bg);
 }
 
 .nav-link {
-    --bs-nav-link-hover-color: var(--uz-color) !important;
+    --bs-nav-link-hover-color: var(--uz-color);
 }
 
 .card {
