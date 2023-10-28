@@ -1,5 +1,25 @@
-* {
-    --bs-card-cap-bg: #673ab7;
+html {
+    --uz-color: var(--bs-white);
+    --uz-bg: #673ab7;
+}
+
+nav,
+.navbar {
+    --bs-navbar-color: var(--uz-color) !important;
+    --bs-navbar-active-color: var(--uz-color) !important;
+    --bs-navbar-brand-color: var(--uz-color) !important;
+    --bs-navbar-toggler-border-color: var(--uz-color) !important;
+    --bs-navbar-toggler-color: var(--uz-color) !important;
+    background-color: var(--uz-bg) !important;
+}
+
+.nav-link {
+    --bs-nav-link-hover-color: var(--uz-color) !important;
+}
+
+.card {
+    --bs-card-cap-color: var(--uz-color);
+    --bs-card-cap-bg: var(--uz-bg);
 }
 
 .bi {
