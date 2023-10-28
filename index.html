@@ -170,7 +170,81 @@
         </div>
     </nav>
 
-    <div class="h-100 d-flex flex-column gap-3 container">
+    <div class="mt-3 d-flex flex-column gap-3 container">
+
+        <!-- Video Carousel -->
+        <div id="videoCarousel" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div id="twitch-embed"></div>
+                </div>
+                <div class="carousel-item">
+                    <iframe src="https://www.youtube.com/embed/0esQOOQaYXk?si=nvlrWGv2bHcn82wi"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="carousel-item">
+                    <iframe
+                        src="https://www.youtube.com/embed/videoseries?si=e6DzKmycdAISGmwP&amp;list=PLLM72XjdOw2VdxSE8LQloLAGa8FnOWSwl"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="carousel-item">
+                    <iframe
+                        src="https://www.youtube.com/embed/videoseries?si=e3JbiOVMjqecsmjl&amp;list=PLLM72XjdOw2XIw3P7GxeeTvAMMQ50Lwbr"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="carousel-item">
+                    <iframe
+                        src="https://www.youtube.com/embed/videoseries?si=f9lpUvLBb_qJpE2P&amp;list=PLLM72XjdOw2Xhgoowuy5FX754XqFzFmiw"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="carousel-item">
+                    <iframe
+                        src="https://www.youtube.com/embed/videoseries?si=f7ptFYxC8NQMwijr&amp;list=PLLM72XjdOw2VM3lglzc6qh9JtsUhzi6zw"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="carousel-item">
+                    <iframe
+                        src="https://www.youtube.com/embed/videoseries?si=M9CzCTVf7_BJEwvG&amp;list=PLLM72XjdOw2UEI8GKX8k2WY405sQmboPh"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Main Information -->
         <div class="card">
             <header class="card-header">
                 <h1 class="card-title">
@@ -243,6 +317,12 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script src="scripts/themeToggler.js"></script>
+
+    <!-- Twitch Embed Scripts -->
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+    <script type="text/javascript">
+        new Twitch.Player("twitch-embed", {channel: "undead_zeratul"});
+    </script>
 </body>
 
 </html>
