@@ -1,3 +1,8 @@
 * {
     --bs-card-cap-bg: #673ab7;
 }
+
+svg.bi {
+    width: 1em;
+    height: 1em;
+}
